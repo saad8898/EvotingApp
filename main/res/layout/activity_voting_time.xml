@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VotingTime">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="logOut"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/danger"
+        android:src="@drawable/baseline_logout_24"
+        app:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voting Period"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:textColor="@color/red"/>
+
+    <Button
+        android:id="@+id/startvote"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/green"
+        android:text="Start Voting"
+        android:onClick="startVoting"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <Button
+        android:id="@+id/endvote"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/red"
+        android:text="End Voting"
+        android:onClick="endVoting"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="430dp" />
+
+</LinearLayout>

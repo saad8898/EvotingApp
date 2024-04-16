@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminDashboard">
+
+    <ImageView
+        android:id="@+id/adminimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:elevation="6dp"
+        android:src="@drawable/admin"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="logOut"
+        android:layout_margin="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/danger"
+        android:src="@drawable/baseline_logout_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:id="@+id/splashtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="280dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Dashboard"
+            android:textSize="34sp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/options"
+        android:elevation="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        android:layout_marginTop="380dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:layout_marginRight="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="verifyUsers"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/verify"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verify Users"
+                    android:textSize="23sp"
+                    android:textColor="#0e1843"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:onClick="votingPeriod">
+
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/votes"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voting Period"
+                    android:textSize="23sp"
+                    android:textColor="#0e1843"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:layout_marginRight="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="countVotes"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/count"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Count Votes"
+                    android:textSize="23sp"
+                    android:textColor="#0e1843"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:onClick="manageCandidates">
+
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/candidates"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Candidates"
+                    android:textSize="23sp"
+                    android:textColor="#0e1843"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="580dp"
+        android:id="@+id/bgapp"
+        android:layout_height="820dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bgapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

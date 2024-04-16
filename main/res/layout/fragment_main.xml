@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <ImageView
+        android:id="@+id/votingimg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:elevation="6dp"
+        android:src="@drawable/vote"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/splashtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="350dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textSize="34sp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logins"
+        android:elevation="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        android:layout_marginTop="480dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:id="@+id/adminLogin"
+                android:layout_marginRight="70dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="adminLogin"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/admin_login"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin Login"
+                    android:textSize="23sp"
+                    android:textColor="#0e1843"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/userLogin"
+                android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:onClick="userLogin">
+
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/user_login"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Login"
+                    android:textSize="23sp"
+                    android:textColor="#0e1843"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="580dp"
+        android:id="@+id/bgapp"
+        android:layout_height="820dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bgapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

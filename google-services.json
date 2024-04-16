@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "316031594452",
+    "firebase_url": "https://evoting500-5587f-default-rtdb.firebaseio.com",
+    "project_id": "evoting500-5587f",
+    "storage_bucket": "evoting500-5587f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316031594452:android:a82172156b1a109cf37041",
+        "android_client_info": {
+          "package_name": "com.example.evoting500"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316031594452-pgiat9956tgkhl8jc2oi9mgbbfudh7t1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGTQXMV0XkyTS-DN3DyKlTyOCRzYtmO-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316031594452-pgiat9956tgkhl8jc2oi9mgbbfudh7t1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

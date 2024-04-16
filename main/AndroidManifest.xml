@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EVoting500"
+        tools:targetApi="31">
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".voteCount"
+            android:exported="false"></activity>
+        <activity
+            android:name=".VoteCandidate"
+            android:exported="false"></activity>
+        <activity
+            android:name=".CandidateList"
+            android:exported="false"></activity>
+        <activity
+            android:name=".VotingTime"
+            android:exported="false"></activity>
+        <activity
+            android:name=".UploadCandidate"
+            android:exported="false"></activity>
+        <activity
+            android:name=".CandidateDetails"
+            android:exported="false"></activity>
+        <activity
+            android:name=".ManageCandidates"
+            android:exported="false"></activity>
+        <activity
+            android:name=".UserDashboard"
+            android:exported="false"></activity>
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".userRequests"
+            android:exported="false"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".AdminDashboard"
+            android:exported="false"></activity>
+        <activity
+            android:name=".AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="false"></activity>
+        <activity
+            android:name=".Login"
+            android:exported="false"></activity>
+
+        <receiver
+            android:name=".VotingStatusReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.evoting500.VOTING_STATUS_ACTION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

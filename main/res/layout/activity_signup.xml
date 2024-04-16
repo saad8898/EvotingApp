@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/signintextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sign up"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/logintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Create a new account" />
+
+    <EditText
+        android:id="@+id/fullnameEt"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/roundback_darkblue"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="16sp"
+        android:autofillHints=""
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/cnicEt"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/roundback_darkblue"
+        android:hint="CNIC"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="16sp"
+        android:autofillHints=""
+        android:drawablePadding="10dp"/>
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/roundback_darkblue"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="16sp"
+        android:autofillHints=""
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/phoneEt"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/roundback_darkblue"
+        android:hint="Phone no."
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textSize="16sp"
+        android:autofillHints=""
+        android:drawablePadding="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/roundback_darkblue"
+        android:layout_marginTop="20dp"
+        >
+        <EditText
+            android:id="@+id/passwordet"
+            android:layout_toStartOf="@id/showhidebtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="password"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:background="@drawable/transparent"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            />
+
+        <ImageView
+            android:id="@+id/showhidebtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:adjustViewBounds="true"
+            android:onClick="showHidePass"
+            android:padding="10dp"
+            android:src="@drawable/show_password"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/roundback_darkblue"
+        android:layout_marginTop="20dp"
+        >
+        <EditText
+            android:id="@+id/conPasswordet"
+            android:layout_toStartOf="@id/conPassShowbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Confirm password"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:background="@drawable/transparent"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            />
+
+        <ImageView
+            android:id="@+id/conPassShowbtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:adjustViewBounds="true"
+            android:onClick="showHideConPass"
+            android:padding="10dp"
+            android:src="@drawable/show_password"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signupbtn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Sign up"
+        android:onClick="register"
+        android:textAllCaps="false"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/roundback_primary"
+        android:textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"/>
+
+        <TextView
+            android:id="@+id/signinbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:onClick="signin"
+            android:text="Sign in"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
